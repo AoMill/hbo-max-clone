@@ -1,0 +1,51 @@
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+}
+.conteudoLinks{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+.links{
+    color: #9e86ff;
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: color 0.5s;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.links:hover{
+    color: #fff;
+}
+.descFooter{
+    font-size: 0.75rem;
+    margin: 16px 0;
+    color: #9e86ff;
+
+}
+.RSociais{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    margin-top: 80px ;
+}
+@media screen and (max-width: 1000px){
+    .conteudoLinks{
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+     
+}
+@media screen and (max-width: 300px){
+    .conteudoLinks{
+        width: 100%;
+    }
+    .links{
+        font-size: 7px; 
+    }
+}

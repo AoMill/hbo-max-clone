@@ -1,0 +1,57 @@
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 70%;
+    background-image: url("/assets/background-movies-series.png");
+    box-shadow: inset 0px 30px 50px -20px rgba(0,0,0,0.75);
+}
+.conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+.tituloOfert{
+    text-align: center;
+    font-size: 20px;
+    color: #bbbbbb;
+    margin-top: 50px;
+}
+.ofert{
+    display: flex;
+    justify-content: space-between; 
+    
+}
+.mobile{
+    transition: transform 1s ease-in-out;
+}
+.mult{
+    transition: transform 1s ease-in-out;
+}
+
+
+.ofert:has(.mobile:hover) .mult{
+    transform: rotateY(-45deg);
+   
+}
+.ofert:has(.mult:hover) .mobile{
+    transform: rotateY(45deg);
+ 
+}
+@media screen and (max-width: 800px){
+    .ofert{
+         flex-wrap: wrap;
+    }
+    .tituloOfert{
+        font-size: 15px;
+        width: 400px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .tituloOfert{
+        font-size: 12px;
+        width: 250px;
+    }
+}
